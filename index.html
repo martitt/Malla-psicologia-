@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Psicología Interactiva</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f7f7;
+      padding: 20px;
+    }
+    h2 {
+      color: #3c3c3c;
+    }
+    .semestre {
+      margin-bottom: 30px;
+    }
+    .ramos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .ramo {
+      background-color: #ffffff;
+      border: 2px solid #cccccc;
+      border-radius: 8px;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .ramo:hover {
+      transform: scale(1.03);
+    }
+    .aprobado {
+      background-color: #b2f2bb !important;
+      border-color: #69db7c;
+    }
+    .reprobado {
+      background-color: #ffa8a8 !important;
+      border-color: #fa5252;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Malla Interactiva – Psicología</h1>
+
+<script>
+  function toggleEstado(element) {
+    if (element.classList.contains('aprobado')) {
+      element.classList.remove('aprobado');
+      element.classList.add('reprobado');
+    } else if (element.classList.contains('reprobado')) {
+      element.classList.remove('reprobado');
+    } else {
+      element.classList.add('aprobado');
+    }
+  }
+</script>
+<div class="semestre">
+<h2>Primer Año – 1er Semestre</h2>
+<div class="ramos">
+  <div class="ramo" onclick="toggleEstado(this)">Introducción a la Psicología</div>
+  <div class="ramo" onclick="toggleEstado(this)">Bases Biológicas del Comportamiento</div>
+  <div class="ramo" onclick="toggleEstado(this)">Filosofía Moderna</div>
+  <div class="ramo" onclick="toggleEstado(this)">Procesos Psicológicos</div>
+  <div class="ramo" onclick="toggleEstado(this)">Lógica de la Investigación</div>
+  <div class="ramo" onclick="toggleEstado(this)">Arte y Literatura</div>
+</div>
+</div>
+<div class="semestre">
+<h2>Primer Año – 2do Semestre</h2>
+<div class="ramos">
+  <div class="ramo" onclick="toggleEstado(this)">Teoría y Sistemas Psicológicos</div>
+  <div class="ramo" onclick="toggleEstado(this)">Neurociencias del Comportamiento</div>
+  <div class="ramo" onclick="toggleEstado(this)">Ontoepistemología y Psicología</div>
+  <div class="ramo" onclick="toggleEstado(this)">Antropología Social</div>
+  <div class="ramo" onclick="toggleEstado(this)">Metodología Cualitativa</div>
+  <div class="ramo" onclick="toggleEstado(this)">Transversal I</div>
+</div>
+</div>
+<div class="semestre">
+<h2>Segundo Año – 3er Semestre</h2>
+<div class="ramos">
+  <div class="ramo" onclick="toggleEstado(this)">Psicología Social</div>
+  <div class="ramo" onclick="toggleEstado(this)">Psicobiología</div>
+  <div class="ramo" onclick="toggleEstado(this)">Género y Sociedades</div>
+  <div class="ramo" onclick="toggleEstado(this)">Ciclo Vital de Infancia y Adolescencia</div>
+  <div class="ramo" onclick="toggleEstado(this)">Análisis de Datos Cuantitativos</div>
+  <div class="ramo" onclick="toggleEstado(this)">Transversal II</div>
+</div>
+</div>
+<div class="semestre">
+<h2>Segundo Año – 4to Semestre</h2>
+<div class="ramos">
+  <div class="ramo" onclick="toggleEstado(this)">Psicología Social Contemporánea</div>
+  <div class="ramo" onclick="toggleEstado(this)">Aprendizaje y Conducta</div>
+  <div class="ramo" onclick="toggleEstado(this)">Ética y Deontología</div>
+  <div class="ramo" onclick="toggleEstado(this)">Ciclo Vital de Adultez y Vejez</div>
+  <div class="ramo" onclick="toggleEstado(this)">Metodología Cualitativa I</div>
+  <div class="ramo" onclick="toggleEstado(this)">Inglés I</div>
+</div>
+</div>
+<div class="semestre">
+<h2>Tercer Año – 5to Semestre</h2>
+<div class="ramos">
+  <div class="ramo" onclick="toggleEstado(this)">Psicología de la Personalidad</div>
+  <div class="ramo" onclick="toggleEstado(this)">Psicopatología</div>
+  <div class="ramo" onclick="toggleEstado(this)">Psicología y Lenguaje</div>
+  <div class="ramo" onclick="toggleEstado(this)">Teoría en Psicoterapia</div>
+  <div class="ramo" onclick="toggleEstado(this)">Metodología Cualitativa II</div>
+  <div class="ramo" onclick="toggleEstado(this)">Inglés II</div>
+</div>
+</div>
+<div class="semestre">
+<h2>Tercer Año – 6to Semestre</h2>
+<div class="ramos">
+  <div class="ramo" onclick="toggleEstado(this)">Técnicas de Manejo Individual y Grupal</div>
+  <div class="ramo" onclick="toggleEstado(this)">Psiquiatría</div>
+  <div class="ramo" onclick="toggleEstado(this)">Psicopatología y Comunicación</div>
+  <div class="ramo" onclick="toggleEstado(this)">Modelos de Psicoterapia</div>
+  <div class="ramo" onclick="toggleEstado(this)">Pruebas Psicológicas Psicométricas</div>
+  <div class="ramo" onclick="toggleEstado(this)">Inglés III</div>
+</div>
+</div>
+<div class="semestre">
+<h2>Cuarto Año – 7mo Semestre</h2>
+<div class="ramos">
+  <div class="ramo" onclick="toggleEstado(this)">Psicología Educacional</div>
+  <div class="ramo" onclick="toggleEstado(this)">Clínica Infantil Juvenil</div>
+  <div class="ramo" onclick="toggleEstado(this)">Psicología Organizacional</div>
+  <div class="ramo" onclick="toggleEstado(this)">Psicología Comunitaria</div>
+  <div class="ramo" onclick="toggleEstado(this)">Pruebas Psicológicas Proyectivas</div>
+  <div class="ramo" onclick="toggleEstado(this)">Integración Profesional</div>
+</div>
+</div>
+<div class="semestre">
+<h2>Cuarto Año – 8vo Semestre</h2>
+<div class="ramos">
+  <div class="ramo" onclick="toggleEstado(this)">Evaluación de Proyectos de Educación</div>
+  <div class="ramo" onclick="toggleEstado(this)">Clínica Adultos</div>
+  <div class="ramo" onclick="toggleEstado(this)">Desarrollo Organizacional</div>
+  <div class="ramo" onclick="toggleEstado(this)">Seminario de Investigación</div>
+  <div class="ramo" onclick="toggleEstado(this)">Diseño de Proyectos en Intervención Comunitaria</div>
+  <div class="ramo" onclick="toggleEstado(this)">Optativo Facultad</div>
+</div>
+</div>
+<div class="semestre">
+<h2>Quinto Año – 9no Semestre</h2>
+<div class="ramos">
+  <div class="ramo" onclick="toggleEstado(this)">Mención en Clínica</div>
+  <div class="ramo" onclick="toggleEstado(this)">Mención en Organizacional</div>
+  <div class="ramo" onclick="toggleEstado(this)">Mención en Educacional</div>
+  <div class="ramo" onclick="toggleEstado(this)">Mención en Comunitaria</div>
+</div>
+</div>
+<div class="semestre">
+<h2>Quinto Año – 10mo Semestre</h2>
+<div class="ramos">
+  <div class="ramo" onclick="toggleEstado(this)">Práctica Profesional</div>
+</div>
+</div>
+
+</body>
+</html>
